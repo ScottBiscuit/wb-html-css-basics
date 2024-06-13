@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <div id="container">
     <header>
       <h1>Order a Smoothiegram</h1>
       <p class="lead">There's no better way to show a loved one you care than with a
@@ -20,7 +21,6 @@
       <section>
         <h2>Smoothie Options</h2>
         <p>Choose from one of these smoothies.</p>
-
         <table>
           <thead>
             <tr>
@@ -42,49 +42,52 @@
               <td class="price">$1,750.00</td>
             </tr>
           </tbody>
-        
-          
-          
-         
         </table>
       </section>
 
       <section>
         <h2>Order Form</h2>
         <form>
-
-        <label>Your name</label>
-        <input type="text" name="sender">
-
-        <label>Who are we sending this to?</label>
-        <input type="text" name="recipient">
-
-        <label>Choose a smoothie</label>
-        <select name="smoothie">
-          <option value="">Please choose an option</option>
-          <option value="super strawberries delicious">Super Strawberries Delicious</option>
-          <option value="white grape ranger">White Grape Ranger</option>
-          <option value="blueberry blast">Blueberry Blast</option>
-        </select>
-        
-        <span>When should we deliver?</span>
-        <input type="radio" name="delivery-time" value="asap">
-        <label>As soon as possible</label>
-        <input type="radio" name="delivery-time" value="am">
-        <label>Morning</label>
-        <input type="radio" name="delivery-time" value="pm">
-        <label>Afternoon</label>
-
-        <label>Enter your message</label>
-        <textarea name="message"></textarea> 
-        
-        <label>Subscribe to our newsletter?</label>
-        <input type="checkbox" name="subscribe" value="yes" checked>   
-        
-        <button type="submit">Submit</button>
-        
+          <div class="form-group">
+            <label>Your name</label>
+            <input type="text" name="sender">
+          </div>
+          <div class="form-group">
+            <label>Who are we sending this to?</label>
+            <input type="text" name="recipient">
+          </div>
+          <div class="form-group">
+            <label>Choose a smoothie</label>
+            <select name="smoothie">
+            <option value="Please choose an option">Please choose an option</option>
+            <option value="super strawberries delicious">Super Strawberries Delicious</option>
+            <option value="white grape ranger">White Grape Ranger</option>
+            <option value="blueberry blast">Blueberry Blast</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <span>When should we deliver?</span>
+            <input type="radio" name="delivery-time" value="asap">
+            <label class="inline-label">As soon as possible</label>
+            <input type="radio" name="delivery-time" value="am">
+            <label class="inline-label">Morning</label>
+            <input type="radio" name="delivery-time" value="pm">
+            <label class="inline-label">Afternoon</label>
+          </div>
+          <div class="form-group">
+            <label>Enter your message</label>
+            <textarea name="message"></textarea> 
+          </div>
+          <div class="form-group">
+            <label class="inline-label">Subscribe to our newsletter?</label>
+            <input type="checkbox" name="subscribe" value="yes" checked>   
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </section>
     </main>
+    </div>
   </body>
 </html>
